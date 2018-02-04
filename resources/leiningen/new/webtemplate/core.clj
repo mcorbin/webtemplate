@@ -5,7 +5,8 @@
             [mount.core :as m]
             [ring.adapter.jetty :refer [run-jetty]]
             [{{name}}.config :as config]
-            [{{name}}.handlers :as h]))
+            [{{name}}.handlers :as h])
+  (:gen-class))
 
 (m/defstate server
   "Mount component for the web server. Use the configuration component.

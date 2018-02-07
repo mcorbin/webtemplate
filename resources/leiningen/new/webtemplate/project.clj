@@ -9,6 +9,7 @@
                  [mount "0.1.11"]
                  [ring/ring-defaults "0.3.1"]
                  [ring/ring-jetty-adapter "1.6.2"]
+                 [org.clojure/tools.namespace "0.2.11"]
                  [spootnik/unilog "0.7.22"]]
   :ring {:handler {{name}}.handlers/app}
   :license {:name "Eclipse Public License"
@@ -17,7 +18,6 @@
   :main {{name}}.core
   :source-paths ["src"]
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [org.clojure/tools.namespace "0.2.11"]
                                   [pjstadig/humane-test-output "0.8.2"]
                                   [ring/ring-mock "0.3.2"]]
                    :plugins [[lein-ring "0.12.2"]
